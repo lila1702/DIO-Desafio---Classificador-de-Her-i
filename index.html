@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Classificador de Nível de Herói</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Classificador de Nível de Herói</h1>
+        <section>
+            <div class="box" id="form">
+                <div class="column">
+                    <img class="form_img" src="../Desafio-Heroi/src/images/Link.png" alt="Imagem de um herói com espada e escudo">
+                </div>
+                
+                <div class="column">
+                    <form class="form">
+                        <legend>Verifique em qual nível seu Herói está:</legend>
+                        <label class="form_title">Nome do Herói</label>
+                        <input class="form_input" type="text" id="user_name" name="user_name">
+                        <label class="form_title">XP do Herói</label>
+                        <input class="form_input" type="number" id="user_xp" name="user_xp">
+                        <input class="submit_input" type="button" value="Verificar" onclick="ConsultarNivel()">
+                    </form>
+                </div>
+                <div class="box_result" id="result">
+                    <!-- <p>O Herói de nome ${nomeHeroi} está no nível de ${nivelHeroi}</p> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Desafio Prático <a href="https://web.dio.me">DIO</a> - Classificador de Nível de Herói</p>
+    </footer>
+
+    <script src="../Desafio-Heroi/src/script/script.js"></script>
+</body>
+
+</html>
